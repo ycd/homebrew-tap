@@ -2,28 +2,28 @@ require 'rbconfig'
 class Dstp < Formula
   desc "Run common networking tests against your site"
   homepage "https://github.com/ycd/dstp"
-  version "0.1.3"
+  version "0.2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ycd/dstp/releases/download/v0.1.3/dstp_0.1.3_darwin_x86_64.tar.gz"
-      sha256 "9bbd169362b6c06f23b732307089117fde270834714855472b44f6b71b664eda"
+      url "https://github.com/ycd/dstp/releases/download/v0.2.0/dstp_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "3081853f3c49f81f08547a85cf6d3d67f75600ca0f0ac809b90dc279d9f7a9cc"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ycd/dstp/releases/download/v0.1.3/dstp_0.1.3_darwin_arm64.tar.gz"
-      sha256 "6967a8595e711277342bffb9046ec0e092576610a7c0ee51913f185632931cdb"
+      url "https://github.com/ycd/dstp/releases/download/v0.2.0/dstp_0.2.0_darwin_arm64.tar.gz"
+      sha256 "36efd48779de413b7a1cfba8edfe478b38b965b3fba12adf9a63911abd43d505"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ycd/dstp/releases/download/v0.1.3/dstp_0.1.3_linux_x86_64.tar.gz"
-      sha256 "0c8745934205c319258e866c5922bb5d0231e60795644a4175f2d0bd3e5c0b2c"
+      url "https://github.com/ycd/dstp/releases/download/v0.2.0/dstp_0.2.0_linux_x86_64.tar.gz"
+      sha256 "832c1c975880afc6fe5b860b5dbcb4f69c11b51e40b5e6d4fb858fb92d19de05"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ycd/dstp/releases/download/v0.1.3/dstp_0.1.3_linux_arm64.tar.gz"
-      sha256 "135d6e7369727d5eb5679f55756b27ad8e52c25c670d0d204c37c4486d49fc09"
+      url "https://github.com/ycd/dstp/releases/download/v0.2.0/dstp_0.2.0_linux_arm64.tar.gz"
+      sha256 "888c72aacb49a6a250d72a02c4eb6a9f5039aa7a4f5ada2224f221bc2b722fda"
     end
   end
 
