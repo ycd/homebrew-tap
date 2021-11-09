@@ -1,4 +1,5 @@
-## How do I install these formulae?
+How do I install these formulae?
+----
 
 brew install ycd/tap/<formula>
 
