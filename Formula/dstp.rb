@@ -3,7 +3,6 @@ class Dstp < Formula
   desc "Run common networking tests against your site"
   homepage "https://github.com/ycd/dstp"
   version "0.2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
